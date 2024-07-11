@@ -3,17 +3,20 @@
 @tailwind utilities;
 
 :root {
-    --background-color-light: #ffffff; /* Cor de fundo para o tema claro */
-    --background-color-dark: #000000;  /* Cor de fundo para o tema escuro */
-  }
-  
-  body {
-    background-color: var(--background-color-light); /* Cor de fundo padrão */
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--background-color-dark); /* Cor de fundo para o tema escuro */
+        --background-color-light: #ffffff; /* Cor de fundo para o tema claro */
+        --background-color-dark: #000000;  /* Cor de fundo para o tema escuro */
     }
-  }
+    
+    body {
+        background-color: var(--background-color-light); /* Cor de fundo padrão */
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: var(--background-color-dark); /* Cor de fundo para o tema escuro */
+            p {
+                color: white;
+            }
+        }
+}
   
