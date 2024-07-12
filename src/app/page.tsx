@@ -1,7 +1,11 @@
+import MainContent from './components /MainContent'
+import SideBar from './components /SideBar'
+
 export default function Home() {
     return (
-        <div>
-            <p>teste</p>
-        </div>
+        <main className="flex h-screen w-screen px-10 py-6">
+            <SideBar />
+            <MainContent />
+        </main>
     )
 }
