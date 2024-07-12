@@ -29,6 +29,7 @@ export default function NavBar(): JSX.Element {
 
     return (
         <>
+            <div>{renderComponent()}</div>
             <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 gap-4 rounded-bl-3xl rounded-tr-3xl bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4">
                 {['Sobre', 'Curriculo', 'Projetos', 'Contato'].map(
                     (tab: string) => (
@@ -44,7 +45,6 @@ export default function NavBar(): JSX.Element {
                     ),
                 )}
             </ul>
-            <div>{renderComponent()}</div>
         </>
     )
 }
