@@ -16,11 +16,6 @@ const config: Config = {
             fontFamily: {
                 poppins: ['Poppins', 'sans-serif'],
             },
-            fontWeight: {
-                normal: '300',
-                medium: '400',
-                bold: '500',
-            },
         },
     },
     plugins: [],
