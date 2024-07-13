@@ -1,3 +1,3 @@
 export default function Abaut() {
-    return <div>Abaut</div>
+    return <div></div>
 }
