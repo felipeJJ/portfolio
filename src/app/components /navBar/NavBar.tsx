@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Abaut from './sections/Abaut'
 import Resume from './sections/Resume'
 import Project from './sections/Projects'
-import Contact from './sections/contact'
+import Contact from './sections/Contact'
 
 /**
  * The NavBar component represents the navigation bar of the application.
@@ -37,27 +37,50 @@ export default function NavBar(): JSX.Element {
     // JSX structure of the NavBar component
     return (
         <>
+            {/* Container div for the navigation bar */}
+            <div className="flex justify-between">
+                {/* Container div for the title */}
+                <div className="h-full">
+                    <div className="h-full content-end pt-8">
+                        {/* Title based on the active tab */}
+                        <h2 className="font-semibold">
+                            {activeTab === 'Sobre'
+                                ? 'Sobre mim'
+                                : activeTab === 'Curriculo'
+                                  ? 'Currículo'
+                                  : activeTab === 'Projetos'
+                                    ? 'Projetos'
+                                    : 'Entre em contato'}
+                        </h2>
+                    </div>
+                </div>
+                {/* List of tabs */}
+                <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 gap-4 rounded-bl-3xl rounded-tr-3xl bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4">
+                    {/* Loop through the tabs and render individual tab items */}
+                    {['Sobre', 'Curriculo', 'Projetos', 'Contato'].map(
+                        (tab: string) => (
+                            // Individual tab item
+                            <li key={tab} onClick={() => setActiveTab(tab)}>
+                                {/* Tab link */}
+                                <a
+                                    className={
+                                        // Conditional class based on active tab
+                                        activeTab === tab
+                                            ? 'text-amber-300'
+                                            : ''
+                                    }
+                                >
+                                    {tab}
+                                </a>
+                            </li>
+                        ),
+                    )}
+                </ul>
+            </div>
             {/* Container div for the rendered component */}
             <div>{renderComponent()}</div>
-            {/* List of tabs */}
-            <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 gap-4 rounded-bl-3xl rounded-tr-3xl bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4">
-                {['Sobre', 'Curriculo', 'Projetos', 'Contato'].map(
-                    (tab: string) => (
-                        // Individual tab item
-                        <li key={tab} onClick={() => setActiveTab(tab)}>
-                            {/* Tab link */}
-                            <a
-                                className={
-                                    // Conditional class based on active tab
-                                    activeTab === tab ? 'text-amber-300' : ''
-                                }
-                            >
-                                {tab}
-                            </a>
-                        </li>
-                    ),
-                )}
-            </ul>
+            {/* Line separator */}
+            <div className="mt-3 h-1 w-12 bg-amber-300"></div>
         </>
     )
 }
