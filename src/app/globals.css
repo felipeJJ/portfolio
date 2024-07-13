@@ -17,6 +17,10 @@
         }
     }
     
-    p, h1, a {
+    p, h1, h2, a {
         color: white;
+    }
+
+    h2 {
+        font-size: 24px;
     }
