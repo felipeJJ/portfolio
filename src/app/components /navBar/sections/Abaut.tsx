@@ -9,7 +9,7 @@ import { SiMysql, SiMongodb, SiExpress, SiJest } from 'react-icons/si'
 
 export default function Abaut() {
     return (
-        <div className="mt-8 pr-10">
+        <>
             <p>
                 Desenvolvedor web com foco em TypeScript, tenho como principal
                 tecnologia o NextJS. Tenho experiência sólida em diversas
@@ -56,6 +56,6 @@ export default function Abaut() {
                     <SiJest size={30} />
                 </div>
             </div>
-        </div>
+        </>
     )
 }

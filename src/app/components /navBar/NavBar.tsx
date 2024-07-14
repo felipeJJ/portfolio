@@ -80,7 +80,7 @@ export default function NavBar(): JSX.Element {
             {/* Line separator */}
             <div className="mt-3 h-1 w-12 bg-amber-300"></div>
             {/* Container div for the rendered component */}
-            <div className="mb-10">{renderComponent()}</div>
+            <div className="mb-10 mt-8 pr-10">{renderComponent()}</div>
         </>
     )
 }
