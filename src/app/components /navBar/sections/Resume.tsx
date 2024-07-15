@@ -9,7 +9,7 @@ export default function Resume() {
                     <h3>Experiência</h3>
                 </div>
                 <div className="flex justify-start">
-                    <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+                    <ul className="timeline timeline-vertical timeline-compact timeline-snap-icon">
                         <li>
                             <div className="timeline-middle">
                                 <svg
@@ -114,7 +114,7 @@ export default function Resume() {
                     <h3>Formação</h3>
                 </div>
                 <div className="flex justify-start">
-                    <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+                    <ul className="timeline timeline-vertical timeline-compact timeline-snap-icon">
                         <li>
                             <div className="timeline-middle">
                                 <svg
@@ -216,7 +216,7 @@ export default function Resume() {
                     <h3>Competências</h3>
                 </div>
                 <div className="flex justify-start">
-                    <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+                    <ul className="timeline timeline-vertical timeline-compact timeline-snap-icon">
                         <li>
                             <hr />
                             <div className="timeline-middle">
