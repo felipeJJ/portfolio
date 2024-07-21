@@ -48,33 +48,27 @@ export default function NavBar(): JSX.Element {
                                 ? 'Sobre mim'
                                 : activeTab === 'Curriculo'
                                   ? 'Currículo'
-                                  : activeTab === 'Projetos'
-                                    ? 'Projetos'
-                                    : 'Entre em contato'}
+                                  : 'Projetos'}
                         </h2>
                     </div>
                 </div>
                 {/* List of tabs */}
-                <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 gap-4 rounded-bl-3xl rounded-tr-3xl bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4">
+                <ul className="menu menu-vertical gap-4 rounded-bl-3xl rounded-tr-3xl bg-base-200 bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4 lg:menu-horizontal">
                     {/* Loop through the tabs and render individual tab items */}
-                    {['Sobre', 'Curriculo', 'Projetos', 'Contato'].map(
-                        (tab: string) => (
-                            // Individual tab item
-                            <li key={tab} onClick={() => setActiveTab(tab)}>
-                                {/* Tab link */}
-                                <a
-                                    className={
-                                        // Conditional class based on active tab
-                                        activeTab === tab
-                                            ? 'text-amber-300'
-                                            : ''
-                                    }
-                                >
-                                    {tab}
-                                </a>
-                            </li>
-                        ),
-                    )}
+                    {['Sobre', 'Curriculo', 'Projetos'].map((tab: string) => (
+                        // Individual tab item
+                        <li key={tab} onClick={() => setActiveTab(tab)}>
+                            {/* Tab link */}
+                            <a
+                                className={
+                                    // Conditional class based on active tab
+                                    activeTab === tab ? 'text-amber-300' : ''
+                                }
+                            >
+                                {tab}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </div>
             {/* Line separator */}
