@@ -9,8 +9,8 @@ import { SiMongodb } from 'react-icons/si'
 
 export default function Project() {
     return (
-        <div className="mt-16 flex justify-evenly">
-            <div className="card w-5/12 bg-base-100 bg-transparent shadow-xl">
+        <div className="flex-col lg:mt-16 lg:flex lg:flex-row lg:justify-evenly">
+            <div className="card bg-base-100 bg-transparent shadow-xl lg:w-5/12">
                 <figure className="cursor-pointer">
                     <Image
                         width={407}
@@ -24,7 +24,7 @@ export default function Project() {
                         }
                     />
                 </figure>
-                <div className="card-body">
+                <div className="card-body p-5 lg:p-9">
                     <h2 className="card-title justify-center">
                         E-commerce Website
                         <div className="badge badge-secondary">NEW</div>
@@ -53,7 +53,7 @@ export default function Project() {
                     </div>
                 </div>
             </div>
-            <div className="card w-5/12 bg-base-100 bg-transparent shadow-xl">
+            <div className="card mt-10 bg-base-100 bg-transparent shadow-xl lg:mt-0 lg:w-5/12">
                 <figure>
                     <Image
                         width={407}
@@ -62,7 +62,7 @@ export default function Project() {
                         alt="projeto 2"
                     />
                 </figure>
-                <div className="card-body">
+                <div className="card-body p-5 lg:p-8">
                     <h2 className="card-title justify-center">
                         E-commerce Admin
                         <div className="badge badge-secondary">NEW</div>

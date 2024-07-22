@@ -38,9 +38,9 @@ export default function NavBar(): JSX.Element {
     return (
         <>
             {/* Container div for the navigation bar */}
-            <div className="flex justify-between">
+            <div className="flex flex-col-reverse lg:flex lg:flex-row lg:justify-between">
                 {/* Container div for the title */}
-                <div className="h-full">
+                <div className="ml-5 h-full lg:ml-0">
                     <div className="h-full content-end pt-8">
                         {/* Title based on the active tab */}
                         <h2 className="font-semibold">
@@ -53,7 +53,7 @@ export default function NavBar(): JSX.Element {
                     </div>
                 </div>
                 {/* List of tabs */}
-                <ul className="menu menu-vertical gap-4 rounded-bl-3xl rounded-tr-3xl bg-base-200 bg-gradient-to-tr from-neutral-800 to-neutral-700 px-6 py-4 lg:menu-horizontal">
+                <ul className="menu menu-horizontal justify-between gap-1 rounded-bl-3xl rounded-tr-3xl bg-base-200 bg-gradient-to-tr from-neutral-800 to-neutral-700 px-2 py-4 lg:justify-start lg:gap-4 lg:px-6">
                     {/* Loop through the tabs and render individual tab items */}
                     {['Sobre', 'Curriculo', 'Projetos'].map((tab: string) => (
                         // Individual tab item
@@ -72,9 +72,11 @@ export default function NavBar(): JSX.Element {
                 </ul>
             </div>
             {/* Line separator */}
-            <div className="mt-3 h-1 w-12 bg-amber-300"></div>
+            <div className="ml-5 mt-3 h-1 w-12 bg-amber-300 lg:ml-0"></div>
             {/* Container div for the rendered component */}
-            <div className="mb-10 mt-8 pr-10">{renderComponent()}</div>
+            <div className="mb-10 ml-5 mt-8 pr-5 lg:ml-0 lg:pr-10">
+                {renderComponent()}
+            </div>
         </>
     )
 }

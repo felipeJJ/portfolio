@@ -43,7 +43,7 @@ export default function Abaut() {
             </p>
             <div className="mt-10">
                 <h3>Frameworks e tecnologias:</h3>
-                <div className="mt-5 flex h-fit w-full justify-between rounded-2xl bg-gradient-to-tr from-neutral-800 to-neutral-700 pb-4 pl-10 pr-10 pt-4 text-amber-300">
+                <div className="mt-5 flex h-fit w-full rounded-2xl bg-gradient-to-tr from-neutral-800 to-neutral-700 px-2 pb-4 pt-4 text-amber-300 lg:justify-between lg:px-10">
                     <IoLogoReact size={30} />
                     <RiNextjsLine size={30} />
                     <BiLogoTypescript size={30} />

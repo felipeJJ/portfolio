@@ -18,7 +18,7 @@ import {
 export default function SideBar() {
     return (
         // SideBar container with gradient background
-        <section className="flex h-fit w-[20%] flex-col place-items-center gap-6 rounded-2xl bg-gradient-to-tr from-neutral-800 to-neutral-700 p-8">
+        <section className="mb-10 flex h-fit w-full flex-col place-items-center gap-6 rounded-2xl bg-gradient-to-tr from-neutral-800 to-neutral-700 p-8 lg:mb-0 lg:w-[20%]">
             {/* Avatar container */}
             <div className="w-fit rounded-2xl bg-neutral-700 px-2 pb-3">
                 <Image src={avatar} width={100} height={100} alt="Avatar" />
