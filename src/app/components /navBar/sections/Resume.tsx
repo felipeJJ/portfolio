@@ -57,10 +57,10 @@ export default function Resume() {
                             <div className="timeline-end mb-5">
                                 <div className="timeline-end mb-5">
                                     <div className="mb-2 text-lg font-black text-white">
-                                        Técnico de computador - R2 Computadores
+                                        Técnico de computador - NPC Tech
                                     </div>
                                     <time className="font-mono italic">
-                                        2019 - 2020
+                                        2021 - 2022
                                     </time>
                                     <p className="font-light text-gray-400">
                                         Montagem e manutenção de computadores.
@@ -87,7 +87,7 @@ export default function Resume() {
                             </div>
                             <div className="timeline-end mb-5">
                                 <div className="mb-2 text-lg font-black text-white">
-                                    Desenvolvedor web FullSteck - NPC Tech
+                                    Desenvolvedor web FullStack - NPC Tech
                                 </div>
                                 <time className="font-mono italic">
                                     jan/2024 - atuaumente{' '}

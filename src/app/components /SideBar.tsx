@@ -27,7 +27,7 @@ export default function SideBar() {
             <div className="flex flex-col place-items-center">
                 <h1 className="mb-4 text-lg font-bold">Jorge Felipe</h1>
                 <p className="rounded-xl bg-neutral-700 px-4 py-2 text-xs font-light">
-                    Desenvolvedor full steck
+                    Desenvolvedor full stack
                 </p>
             </div>
             {/* Separator line */}
@@ -64,7 +64,9 @@ export default function SideBar() {
                             <p className="mb-1 text-xs font-bold text-neutral-500">
                                 CELULAR
                             </p>
-                            <a href="tel:+5573998088530">+55 (73) 998088530 </a>
+                            <a href="tel:+5573998088530">
+                                +55 (73) 99808-8530{' '}
+                            </a>
                         </div>
                     </li>
                     {/* Location contact item */}
